@@ -32,5 +32,8 @@ inputs = {
   failover_instance_count = 0
   read_replica_count = 0
 
+  maintenance_window_day = 1
+  maintenance_window_hour = 23
+
 }
 
