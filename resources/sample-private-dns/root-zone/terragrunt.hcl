@@ -3,9 +3,11 @@ dependency "sample_nw" {
 }
 
 locals {
-  environment_vars = read_terragrunt_config(find_in_parent_folders("environment.hcl"))
+  dns_vars = read_terragrunt_config(find_in_parent_folders("dns.hcl"))
 
-  environment_id = local.environment_vars.locals.environment_id
+  prefix   = local.dns_vars.locals.prefix
+  name     = local.dns_vars.locals.name
+  dns_zone = local.dns_vars.locals.dns_zone
 }
 
 terraform {
@@ -18,10 +20,9 @@ include {
 
 inputs = {
 
-  prefix = local.environment_id
-
-  name     = "sample-zone"
-  dns_zone = "sample-zone.com"
+  prefix   = local.prefix
+  name     = local.name
+  dns_zone = local.dns_zone
 
   private_network_ids = [
     dependency.sample_nw.outputs.private_network_id,
