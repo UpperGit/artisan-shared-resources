@@ -1,5 +1,5 @@
 dependency "sample_nw" {
-  config_path = "../sample-network"
+  config_path = "../../sample-network"
 }
 
 locals {

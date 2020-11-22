@@ -22,9 +22,9 @@ jobs:
         id: config
         env:
           GCP_JSON_CREDENTIALS: ${{ secrets.GCP_JSON_CREDENTIALS }}
-          GLOBAL_HCL: ${{ secrets.GLOBAL_HCL }}
+          GLOBAL_YAML: ${{ secrets.GLOBAL_YAML }}
         run: |
-          echo "$GLOBAL_HCL" > global.hcl
+          echo "$GLOBAL_YAML" > global.yaml
           echo "$GCP_JSON_CREDENTIALS" > gcp_credentials.json
 
           # Get current branch/tag name

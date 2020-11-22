@@ -30,4 +30,5 @@ override.tf.json
 
 # Terragrunt
 global.hcl
+global.yaml
 *.terragrunt-cache

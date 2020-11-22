@@ -1,5 +1,5 @@
 dependency "root_zone" {
-  config_path = "../"
+  config_path = "../root-zone"
 }
 
 terraform {
