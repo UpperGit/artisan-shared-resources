@@ -1,5 +1,6 @@
 dependency "root_zone" {
-  config_path = "../root-zone"
+  config_path  = "../root-zone"
+  skip_outputs = true
 }
 
 terraform {
