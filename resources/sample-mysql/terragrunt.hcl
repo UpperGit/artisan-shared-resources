@@ -19,7 +19,7 @@ include {
 inputs = {
 
   prefix = local.environment_id
-  name = "sample-mysql"
+  name = "sample-mysql-db"
 
   private_network_id = dependency.sample_nw.outputs.private_network_id
 
