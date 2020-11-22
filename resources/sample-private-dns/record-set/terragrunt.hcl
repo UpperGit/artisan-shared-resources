@@ -28,12 +28,13 @@ inputs = {
   records = [
 
     {
+      subdomain = "sample-subdomain"
       type = "TXT"
       ttl  = 60
       record_set = [
         "My\"\"sample record",
       ]
-    }
+    },
 
   ]
 
