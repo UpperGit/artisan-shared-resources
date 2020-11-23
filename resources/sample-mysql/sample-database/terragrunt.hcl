@@ -12,7 +12,7 @@ include {
 
 inputs = {
 
-  dabatase_instance_name = dependency.cluster.outputs.database_instance_name
+  database_instance_name = dependency.cluster.outputs.database_instance_name
   database_name          = "sample-database"
 
 }

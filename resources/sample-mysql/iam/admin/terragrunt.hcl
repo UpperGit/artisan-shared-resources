@@ -12,7 +12,7 @@ include {
 
 inputs = {
 
-  dabatase_instance_name = dependency.cluster.outputs.database_instance_name
+  database_instance_name = dependency.cluster.outputs.database_instance_name
 
   common_name = "admin-tls"
   enable_tls  = true
