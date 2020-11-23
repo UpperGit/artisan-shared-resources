@@ -27,6 +27,7 @@ inputs = {
   deletion_protection = false
   tier                = "db-f1-micro"
   availability_type   = "ZONAL"
+  region              = "us-central1"
 
   backup_enabled          = false
   failover_instance_count = 0
