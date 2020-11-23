@@ -32,7 +32,7 @@ inputs = {
       type = "TXT"
       ttl  = 60
       record_set = [
-        "My\"\"sample record",
+        "\"My sample record\"",
       ]
     },
 
