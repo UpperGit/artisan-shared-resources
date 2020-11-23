@@ -1,5 +1,5 @@
 dependency "sample_nw" {
-	config_path = "../sample-network"
+  config_path = "../../sample-network"
 }
 
 locals {
@@ -19,20 +19,20 @@ include {
 inputs = {
 
   prefix = local.environment_id
-  name = "sample-mysql-db"
+  name   = "sample-mysql-db"
 
   private_network_id = dependency.sample_nw.outputs.private_network_id
 
-  database_version = "MYSQL_5_7"
+  database_version    = "MYSQL_5_7"
   deletion_protection = false
-  tier = "db-f1-micro"
-  availability_type = "ZONAL"
+  tier                = "db-f1-micro"
+  availability_type   = "ZONAL"
 
-  backup_enabled = false
+  backup_enabled          = false
   failover_instance_count = 0
-  read_replica_count = 0
+  read_replica_count      = 0
 
-  maintenance_window_day = 1
+  maintenance_window_day  = 1
   maintenance_window_hour = 23
 
 }
