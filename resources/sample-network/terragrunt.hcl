@@ -32,4 +32,14 @@ inputs = {
     "us-central1",
   ]
 
+  access_connectors = {
+    "us-central1" = {
+
+      cidr         = "10.8.0.0/28",
+      min_throughput = 200,
+      max_throughput = 300,
+
+    }
+  }
+
 }
